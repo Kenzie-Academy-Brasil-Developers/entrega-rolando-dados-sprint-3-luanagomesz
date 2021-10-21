@@ -60,6 +60,10 @@ for (let i = 0; i<count.length; i++){
 })
 
 function diceRoll (){
+    document.getElementById('main').innerHTML = ''
+    for(let r =0;r<count.length;r++){
+        count[r].items = 0
+    }
   for (let i = 0; i<1000; i++){
   const dado1 = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
   const dado2 = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
